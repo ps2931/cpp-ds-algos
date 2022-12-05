@@ -5,8 +5,8 @@ using namespace std;
 // Check if a number is armstrong or not
 
 int main() {
+    // Enter an integer number;
     int n;
-    cout << "Enter an integer number: ";
     cin >> n;
 
     int sum = 0;
