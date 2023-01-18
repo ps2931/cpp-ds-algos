@@ -13,6 +13,7 @@ bool isPrime(int num) {
 
 int main() {
     int a, b;
+    cout << "Find prime numbers between given two numbers";
     cout << "Enter first integer: ";
     cin >> a;
     cout << "Enter second integer: ";
@@ -27,4 +28,3 @@ int main() {
 
     return 0;
 }
-

@@ -1,13 +1,12 @@
 #include <iostream>
 #include <cmath>
-using namespace std;
 
-//  Check is a given number is prime or not
+//  Check if a given number is prime or not
 
 int main() {
     int n;
-    cout << "Enter an integer number: ";
-    cin >> n;
+    std::cout << "Enter an integer number: ";
+    std::cin >> n;
 
     int flag=0;
 
@@ -19,9 +18,9 @@ int main() {
     }
 
     if(flag==0) {
-        cout << n <<" is a prime number" << endl;
+        std::cout << n <<" is a prime number" << std::endl;
     }else {
-        cout << n <<" is not a prime number" << endl;
+        std::cout << n <<" is not a prime number" << std::endl;
     }
 
     return 0;
