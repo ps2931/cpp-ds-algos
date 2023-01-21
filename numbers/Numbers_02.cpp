@@ -1,12 +1,13 @@
 #include <iostream>
-using namespace std;
 
 // Reverse a number
+// E.g 1234 => 4321
 
 int main() {
     int n;
-    cout << "Enter an integer number: ";
-    cin >> n;
+
+    std::cout << "Enter an integer number: ";
+    std::cin >> n;
 
     int reverse_number=0;
 
@@ -16,7 +17,7 @@ int main() {
         n = n/10;
     }
 
-    cout << "Reversed number is " << reverse_number << endl;
+    std::cout << "Reversed number is " << reverse_number << std::endl;
 
     return 0;
 }

@@ -1,13 +1,13 @@
 #include <iostream>
 #include <pthread.h>
-using namespace std;
 
 // Check if a number is armstrong or not
+// 153 = 1^3 + 5^3 + 3^3
 
 int main() {
-    // Enter an integer number;
     int n;
-    cin >> n;
+    std::cout << "Enter an integer number: ";
+    std::cin >> n;
 
     int sum = 0;
     int number = n;
@@ -18,9 +18,9 @@ int main() {
     }
 
     if(sum == number) {
-        cout << "Number is armstrong" << endl;
+        std::cout << "Number is armstrong" << std::endl;
     } else {
-        cout << "Number is not armstrong" << endl;
+        std::cout << "Number is not armstrong" << std::endl;
     }
 
     return 0;

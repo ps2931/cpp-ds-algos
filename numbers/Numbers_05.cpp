@@ -1,18 +1,18 @@
 #include <iostream>
-using namespace std;
 
-// Print fibonacci series.
+// Print fibonacci series
+// 0 1 1 2 3 5 8 13 21 ...
 
 void fibonacci(int n) {
-    int a = 0;
-    int b = 1;
-    int c;
+    int t1 = 0;
+    int t2 = 1;
+    int nextTerm;
 
     for(int i=1; i<=n; i++){
-        cout << a << endl;
-        c = a + b;
-        a = b;
-        b = c;
+        std::cout << t1 << std::endl;;
+        nextTerm = t1 + t2;
+        t1 = t2;
+        t2 = nextTerm;
     }
     return;
 }
@@ -20,8 +20,8 @@ void fibonacci(int n) {
 int main() {
 
     int n;
-    cout << "Enter an integer number: ";
-    cin >> n;
+    std::cout << "Enter an integer number: ";
+    std::cin >> n;
 
     fibonacci(n);
 

@@ -1,10 +1,11 @@
 #include <iostream>
 #include <cmath>
-using namespace std;
+
+// Find all prime numbers between given two numbers
 
 bool isPrime(int num) {
-    for (int i=2; i<=sqrt(num); i++){
-        if(num%i==0){
+    for (int i=2; i <= sqrt(num); i++){
+        if(num%i == 0){
             return false;
         }
     }
@@ -12,19 +13,19 @@ bool isPrime(int num) {
 }
 
 int main() {
-    int a, b;
-    cout << "Find prime numbers between given two numbers";
-    cout << "Enter first integer: ";
-    cin >> a;
-    cout << "Enter second integer: ";
-    cin >> b;
+    int a{}, b{};
+    std::cout <<
+        "Enter two integer (first should be less than second)"
+        << std::endl;;
+    std::cin >> a;
+    std::cin >> b;
 
     for(int i=a;i<=b;i++){
         if(isPrime(i)){
-            cout << i << " ";
+            std::cout << i << " ";
         }
     }
-    cout << endl;
+    std::cout << std::endl;
 
     return 0;
 }
